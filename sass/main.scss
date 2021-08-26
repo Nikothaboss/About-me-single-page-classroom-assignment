@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+// ! Variables
+$gradient: linear-gradient( #859398, #283048);
+$secondary: #283048;
+$footer-color: #f2f2f2;
+$header-color: black;
+$box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+$poppins: 'Poppins', sans-serif;
+
+@mixin flex ($jc, $ai, $fd) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $fd;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    @include flex(space-between, center , column );
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: $header-color;
+    padding: 20px;
+}
+
+/* ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 50%;
+    font-size: 24px;
+} */
+
+body{
+    background: $gradient; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: $poppins;
+    color: #f2f2f2;
+}
+
+.about-me{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    box-shadow: $box-shadow;
+    border-radius: 10%;
+}
+
+.about-me-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $secondary;
+    border-radius: 0 10% 10% 0;
+    padding: 10px;
+}
+
+.about-me-text h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-me img{
+    width: 350px;
+    border-radius: 10% 0 0 10%;
+}
+
+.about-me p {
+    font-size: 24px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+footer{
+    background: $footer-color;
+    color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
