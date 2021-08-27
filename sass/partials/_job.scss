@@ -1,0 +1,8 @@
+@use './variables';
+@use './mixins';
+
+.myDreamJob{
+    background-color: variables.$secondary;
+    width: 50%;
+    padding: 20px;
+}

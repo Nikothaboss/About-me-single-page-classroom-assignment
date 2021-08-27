@@ -10,26 +10,15 @@
     @include mixins.flex(space-between, center , column);
     width: 100%;
     margin: auto;
-    height: 100vh;
+    height: 100%;
 }
 
 header{
-    // display: flex;
-    // justify-content: center;
     @include mixins.flex(center, null,  flex-start);
     width: 100%;
     background: variables.$header-color;
     padding: 20px;
 }
-
-/* ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    width: 50%;
-    font-size: 24px;
-} */
 
 body{
     background: variables.$gradient; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -43,6 +32,7 @@ body{
     width: 60%;
     box-shadow: variables.$box-shadow;
     border-radius: 10%;
+    margin-top: 20px;
 }
 
 .about-me-text{
@@ -66,6 +56,12 @@ body{
     font-size: 24px;
     line-height: 1.6;
     margin-bottom: 20px;
+}
+
+.btn-container{
+    padding: 20px 30px;
+    background: variables.$footer-color;
+    margin: 20px 0;
 }
 
 footer{
