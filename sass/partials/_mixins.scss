@@ -1,10 +1,13 @@
-@mixin flex ($jc:null, $ai:null, $fd:null) {
-    display: flex;
-    justify-content: $jc;
-    align-items: $ai;
-    flex-direction: $fd;
+@use "variables";
+@mixin flex($jc: null, $ai: null, $fd: null) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+  flex-direction: $fd;
 }
 
-@mixin button{
-    
+@mixin button {
+  padding: 20px 30px;
+  background: variables.$footer-color;
+  margin: 20px 0;
 }
