@@ -34,6 +34,17 @@ body {
   box-shadow: variables.$box-shadow;
   border-radius: 10%;
   margin-top: 20px;
+
+  img {
+    width: 350px;
+    border-radius: 10% 0 0 10%;
+  }
+
+  p {
+    font-size: 24px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
 }
 
 .about-me-text {
@@ -41,22 +52,11 @@ body {
   background-color: variables.$secondary;
   border-radius: 0 10% 10% 0;
   padding: 10px;
-}
 
-.about-me-text h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.about-me img {
-  width: 350px;
-  border-radius: 10% 0 0 10%;
-}
-
-.about-me p {
-  font-size: 24px;
-  line-height: 1.6;
-  margin-bottom: 20px;
+  h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
 }
 
 .btn-container {
