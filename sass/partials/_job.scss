@@ -5,7 +5,13 @@
   background-color: variables.$secondary;
   width: 50%;
   padding: 20px;
+  height: 250px;
   box-shadow: variables.$box-shadow;
+  @include mixins.flex(center, center, column);
+
+  p {
+    margin-bottom: 10px;
+  }
 }
 
 .wrapper-job {

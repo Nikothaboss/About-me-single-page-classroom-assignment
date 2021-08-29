@@ -27,6 +27,11 @@ body {
   color: #f2f2f2;
 }
 
+a {
+  text-decoration: none;
+  color: variables.$header-color;
+}
+
 .about-me {
   text-align: center;
   @include mixins.flex(center);
